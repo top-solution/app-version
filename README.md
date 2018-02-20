@@ -1,4 +1,4 @@
-# h1 app-version
+# app-version
 
 Simple CLI tool to replace a properly configured version oject with the application version written in `package.json`.
 
