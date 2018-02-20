@@ -1,8 +1,8 @@
 # app-version
 
-Simple CLI tool to replace a properly configured version oject with the application version written in `package.json`.
+Simple CLI tool to replace a properly configured version object in a specified file with the latest application version, written in `package.json`. When the replacement is done, `package.json`, `package-lock.json` and the modified file will be git-committed and tagged with the version number.
 
-To run the utility, simply add a tark after the `npm version` tool runs:
+To run the utility, simply add a task in the `package.json`:
 
 ```
 "scripts": {
@@ -31,3 +31,11 @@ Please remember to add a `.npmrc` in your directory to prevent git auto tagging 
 ```
 git-tag-version = false
 ```
+
+After updating the version, using `npm version` like this:
+
+```
+npm version patch
+```
+
+this script will create a commit with the text `Released version 1.0.12` and the tag `v1.0.12`.
