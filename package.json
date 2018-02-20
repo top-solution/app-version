@@ -1,0 +1,10 @@
+{
+  "name": "app-version",
+  "version": "0.0.1",
+  "description": "Replaces an app version object in a specified file with the current version in package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
