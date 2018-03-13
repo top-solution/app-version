@@ -24,7 +24,7 @@ if (!process.argv[2]) {
 
 const sourcePath = process.argv[2]
 const source = readFileSync(sourcePath, 'utf-8')
-const magicRegex = /(\s*(const|var|let)\s*info\s*=\s*{\s*\n\s*name\s*:\s*')(.*)('\s*,\n\s*version\s*:\s*')(.*)('\n\s*}\s*\s*)$/mi
+const magicRegex = /(\s*(const|var|let)\s*info\s*=\s*{\s*\n\s*name\s*:\s*')(.*)('\s*,\n\s*version\s*:\s*')(.*)('\n\s*}\s*\s*)/mi
 
 if (!source.match(magicRegex)) {
   console.error('Can\'t find any pattern to replace')
