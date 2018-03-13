@@ -38,7 +38,7 @@ writeFileSync(sourcePath, replaced, 'utf-8')
 console.log('Version replaced succesfully')
 
 console.log(`git add package.json package-lock.json ${sourcePath}`)
-exec(`git add package.json package-lock.json ${sourcePath}`, (err, stdout, stderr) => {
+exec(`git add packag*.json yarn*lock ${sourcePath}`, (err, stdout, stderr) => {
   if (err) {
     console.error(err)
     process.exit(5)
